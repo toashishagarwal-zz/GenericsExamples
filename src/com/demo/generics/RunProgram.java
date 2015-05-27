@@ -12,6 +12,12 @@ public class RunProgram {
 		stringBox.set("String");
 		
 		System.out.println(stringBox.get());
+		
+		// This is a compilation problem bcoz inspect() method expects anything that extends a Number 
+		// and here we pass String
+		// integerBox.inspect("Test my string"); 
+		
+		integerBox.inspect(10);
 	}
 
 }
